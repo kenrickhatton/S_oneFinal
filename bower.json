@@ -1,0 +1,22 @@
+{
+  "name": "s1_rawgod",
+  "description": "streamoneproject",
+  "main": "index.js",
+  "authors": [
+    "mr kenrick hatton"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/kenrickhatton/S_oneFinal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7"
+  }
+}
