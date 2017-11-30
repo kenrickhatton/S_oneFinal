@@ -2,7 +2,9 @@ body{
   background-color: #F9B5B5;
 
 }
-
+#mainBody{
+  padding:5px;
+}
 .navbar-brand{
   font-size: 30px;
 }
