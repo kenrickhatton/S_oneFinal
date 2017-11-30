@@ -49,6 +49,11 @@ Here we have a single header that simply says Some of the tech used includes. An
  
 ## Contributing
 
+text in the home page taken from a free to distribute pdf from www.rawfeedingrebels.com/wp-content/uploads/2014/11/dogs-starterguide.pdf
+But hope it could be a Blog Access page if used.
+
+
+
 As this is a Solo Project Please Do not need any controbutions but if it would like to be forked for some one else the staps below are what i used to get it going.
  
 ### Getting the code up and running

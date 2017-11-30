@@ -1,5 +1,9 @@
+body{
+  background-color: #F9B5B5;
+
+}
+
 .navbar-brand{
-  position: relative;
   font-size: 30px;
 }
 
@@ -61,3 +65,6 @@ li{
     padding-top:2em;
     padding-bottom:2em;
   }
+.navbar-brand{
+  font-size: 20px;
+}

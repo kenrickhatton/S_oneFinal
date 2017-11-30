@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='BerawApp'>
 <head>
 	<meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BeRawDogs</title>
-    <base href="/"> <!-- needed for Angular HTML5 mode -->
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/Mycss.css">
+   <title>BeRawDogs</title>
+   <base href="/"> <!-- needed for Angular HTML5 mode -->
+    	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="/css/Mycss.css">
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
     <style>
+    /* There is a Mycss.css file ref above so not needed here any more*/
     </style>
 </head>
-<body>	
-	<nav class="navbar navbar-inverse">		
-		<div class='nav container'>
+<body>
+
+<nav class="navbar navbar-inverse">		
+		<div class='container'>
 		    <div class="nav navbar-header">
-		    	<a class="navbar-brand" href="/">BeRawDogs.co.uk</a>
+		    	<a class="navbar-brand" href="/"><strong>BeRawDogs.co.uk</strong></a>
 		    	<button type="button" class="navbar-toggle collapsed" 
 		    		data-toggle="collapse" 
 		    		data-target="#myCollapsingList">
@@ -31,54 +33,54 @@
 		    <ul id="myCollapsingList" class="nav navbar-nav 
 									         collapse navbar-collapse">
 				 <li><a href="/">Home</a></li>
-			     <li><a href="/">Information</a></li>
+			     <li><a href="/firstStep">Information</a></li>
 			     <li><a href="#">Gallery</a></li>
 			     <li><a href="#">Suppliers</a></li>
 			     <li class="dropdown-menu">
-					<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><span >Accounts </span</a>
+					<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><span >Accounts </span></a>
 					<ul class='dropdown-menu'>
 						<li><a href="/accounts/register">Register</a></li>
 						<li><a href="/accounts/login">Login</a></li>
 					</ul>
 				</li>
 			</ul>
-		</div>
-	
+		</div>	
 	<div class="jumbotron">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 btn-holder">
-			</div>
-		<!--<div class="jumbotron jumbotron-billboard" >-->
-			<!--<div class="img" >
-				<div Class="row">-->
-					<div class="col-sm-4">
-						<h2>Welcome to BeRawDogs.co.uk!</h2>
-					  <p> 
-					  	This is a site for those that wish to learn the benefits of raw feeding their dog!
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 btn-holder"></div>
+			  	<div class="col-sm-4">
+					<h2>Welcome to BeRawDogs.co.uk!</h2>
+						<p> 
+						  	This is a site for those that wish to learn the benefits of raw feeding their dog!
 						</p>
-					  <p>
-					  	I and my Wife have a lovely husky and have developed this website to share with others everything we have learnt and how we successfully transitioned our dog over to raw diet.</p>
-					  	<p>
-					  	This is a StreamOne Project for me.
-					  </p>
-					</div>
-				</div>
-			</nav><!--</div>
-		</div>-->
-    </div> 
-	</div>
+						<p>
+						  	I and my Wife have a lovely husky and have developed this website to share with others everything we have learnt and how we successfully transitioned our dog over to raw diet.
+						</p>
+						<p>
+						  	This is a StreamOne Project for me.
+						</p>
+		 		</div>
+			</div>
+</nav>
 				
-	<div class="container">
-					<div Class="row">
-						<div class="col-md-4">
-							
-						</div>
+<div class="container">
+	<div Class="row">
+		<div class="col-md-4">					
 		</div>
-	</div>					<!-- The templates will be merged into this div: -->
-	<div ng-view>	
 	</div>
+</div>					<!-- The templates will be merged into this div: -->
+	<div ng-view>
 
+	</div>
+	<!--<script src='http://code.jquery.com/jquery.min.js'></script>-->
+	<script src="js/brdApp.js"></script>
+	<script src="js/brdControl.js"></script>
+	<script src="js/brdService.js"></script>
+	<script src="js/brdDirective.js"></script>
 </body>
-<script src='http://code.jquery.com/jquery.min.js'></script>
 </html>
+
+
+
+
