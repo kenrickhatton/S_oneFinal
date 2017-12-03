@@ -75,7 +75,7 @@
     padding:2em;
     border-radius: 4px;
     border: 2px solid black;
-    height:480px;
+    height:auto;
     font-size: 15px;
   }
 
@@ -88,13 +88,10 @@
 
 
                 /*--Media types below*/
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) { ... }
-
-
-
-/* Small devices (landscape phones, less than 768px)*/
-@media screen and (max-width: 767px) {
+/* Extra small devices (portrait phones, less than 576px)
+      bootstrap col-xs changed to 736px test
+      /* Portrait and Landscape */
+@media screen and (max-width: 576px){
   .jumbotron {
     background: #000000;
     padding-top:2em;
@@ -115,7 +112,7 @@
   }
   .narrow-weekTwo{
   display:none;
-}
+  }
   .narrow-weekThr{
   display:none;
   }
@@ -128,10 +125,83 @@
   }  
 }
 
+@media screen and (max-device-width: 639px){
+  /*and (-webkit-min-device-pixel-ratio: 3){*/
+   .jumbotron {
+    background: #000000;
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+  .navbar-brand{
+    font-size: 20px;
+  }
+  .narrow-results{
+    display:none;
+  }
+  #blockUnit{
+    padding:1.5em;
+    height:50%;
+  }
+  .narrow-weekOne{
+    display:none;
+  }
+  .narrow-weekTwo{
+  display:none;
+  }
+  .narrow-weekThr{
+  display:none;
+  }
+  .narrow-weekFol{
+    display:none;
+  }
+  #wkbtn{
+      width: 93%;
+      margin: auto;
+  } 
+}
 
 
+/* Small devices (landscape phones, less than 768px)
+
+      bootstrap col-sm cahanged to 736px
+*/
+@media screen and (max-width: 736px) and (orientation: landscape) {
+.jumbotron {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+.jumbotron p {
+  font-size: 16px;
+}
+    .navbar-brand{
+    font-size: 149%;
+  }
+  .narrow-results{
+    display:none;
+  }
+.narrow-weekOne{
+    display:none;
+  }
+  .narrow-weekTwo{
+  display:none;
+  }
+  .narrow-weekThr{
+  display:none;
+  }
+  .narrow-weekFol{
+    display:none;
+  }
+#blockUnit{
+    padding:1.5em;
+    height:auto;
+  }
+#wkbtn{
+      width: 93%;
+      margin: auto;
+
+}
 /* Medium devices (tablets, less than 992px)*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .navbar-brand{
     font-size: 149%;
   }
