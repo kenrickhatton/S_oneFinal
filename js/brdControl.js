@@ -3,12 +3,17 @@ angular.module('RouteControllers', [])
         $scope.title = "Welcome To Angular Todo!";
     })
     .controller('FirstController', function($scope) {
-        $scope.Info = "This is only a guide that we used first";
+        $scope.info = "This is only a guide that we used first.";
     })
     .controller('SupplierController', function($scope) {
-        $scope.Info = "This is only a guide that we used first";
+        $scope.topLine = "This is a List Of Supplys for Raw Feeding.";
     })
-
+    .controller('GalleryController', function($scope) {
+        $scope.gtopLine = "Photos of the Site.";
+    })
+    .controller('CalcController', function($scope) {
+        $scope.CalcLine = "Meal Calc.";
+    })
 
 .controller('RegisterController', function($scope, $location, UserAPIService, store) {
 

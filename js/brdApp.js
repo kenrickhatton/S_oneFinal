@@ -11,6 +11,14 @@ angular.module("MyApp").config(function($locationProvider, $routeProvider) {
 		templateUrl: '/S1_templates/brdfirststep.html',
 		controller: 'FirstController'
 	})
+	.when('/Calc', {
+		templateUrl: '/S1_templates/brdMealcalc.html',
+		controller: 'CalcController'
+	})
+	.when('/Gallery', {
+		templateUrl: '/S1_templates/brdHomegallery.html',
+		controller: 'GalleryController'
+	})
 	.when('/Suppliers',{
 		templateUrl: '/S1_templates/brdSuppliers.html',
 		controller: 'SupplierController'

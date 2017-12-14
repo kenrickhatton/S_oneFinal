@@ -35,7 +35,8 @@
 									         collapse navbar-collapse">
 				 <li><a href="/">Home</a></li>
 			     <li><a href="/FirstStep">Information</a></li>
-			     <li><a href="#">Gallery</a></li>
+			     <li><a href="/Calc">Calculator</a></li>
+			     <li><a href="/Gallery">Gallery</a></li>
 			     <li><a href="/Suppliers">Suppliers</a></li>
 			     <li><a class="btn btn-link" href="/BeRaw/register" role="button">Register</a></li>
 			     <li><a class="btn btn-link" href="/BeRaw/login/" role="button">Login</a></li>
@@ -66,11 +67,9 @@
 	</div>
 </nav>
 				
-<div class="mainContainer">
-		<div id="mainBody" ng-view>
+<div id="baseFrame" ng-view>
+		
 				<!-- The templates will be merged into this div: -->
-		</div>
-
 </div>			
 
 	<!--<script src='http://code.jquery.com/jquery.min.js'></script>-->
@@ -79,6 +78,7 @@
 	<script src="js/brdService.js"></script>
 	<script src="js/brdDirective.js"></script>
 	<script src="js/Myjs.js"></script>
+	<script src="js/calc.js"></script>
 </body>
 </html>
 

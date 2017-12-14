@@ -6,9 +6,20 @@
   li{
       padding-top: 7px;
   }
+ p > strong{
+    font-size:25px;
+  }
+  h1{
+    font-size:40px;
+
+  }
   .navbar-toggle { 
         float: left;
   }
+#imgsize{
+ height: 200px;
+  width: 300px;
+}
   .navbar-brand { 
     float: right;
     font-size: 35px;
@@ -30,7 +41,11 @@
   .narrow-results{
     display:block;
   }
+  .narrow-Img{
+    display:block;
+  }
   .mainContainer{
+    width: 100%;
     margin:5px;
   }
   #intbtn{background-color: black;
@@ -45,6 +60,12 @@
     margin:5px;
     text-align: left;
   }
+  .gallContainer{
+    display:inline-block;
+    margin:5px;
+    padding:5px;
+    text-align: left;
+  }
   .narrow-weekOne{
     display:block;
   }
@@ -57,18 +78,21 @@
   .narrow-weekFol{
     display:block;
   }
+  .narrow-sup{
+    display:block;
+  }
   .fsContainer{
     margin:10px;
     text-align: center;
     }
-  #wkbtn{
-
+  #imgbtn{
+    display:block;
   }
   #pup1 {
     display: inline-flex;
     background: url("../S1_img/Midnight1.jpg") no-repeat top center;
   }
-
+.carousel-caption > a{color:#eeeeee;}
 /* brdSupplier.html  Suppliers page*/
   #blockUnit{
     background-color:#f78787;
@@ -78,46 +102,105 @@
     height:auto;
     font-size: 15px;
   }
+#tLine{
+    background-color:#f78787;
+    padding:10px;
+    border-radius: 4px;
+    margin: 5px;
+    border: 2px solid black;
+    text-align: center;
+  }
+#buGallery{
+    background-color:#f78787;
+    padding:10px;
+    margin:5px;
+    border-radius: 4px;
+    border: 2px solid black;
+    font-size: 15px;
+  }
+#baseFrame{
+    background-color:#aa3131;
+    padding:2px;
+    margin:1px;
+    border-radius: 7px;
+    border: 3px solid black;
+  }
 
+.carousel {
+margin-top: 77px;
+margin-bottom: 0px;
+margin: 0 auto;
+position: relative;
+}
 
+.carousel .item {                 /*Stackoverflow help from Ryan Fishel*/
+    background:#F9F9F9;
+    border:1px solid #E0E0E0;
+    overflow:hidden;
+    margin-bottom:1em;
+    margin-top:1em;
+    padding:5px;
+}
+.carousel-inner > .item > img {
+    border: 1px solid #DDDDDD;
+    float: left;
+    margin: 0pt 3px;
+    padding: 2px;
+    height: 500px;
+    width:  100%;
+}
+.carousel-inner > .item > img:hover {
+    border: 1px solid #000000;
+}
+.carousel-indicators {
+position: absolute;
+bottom: 13;
+}
 
-
-
-
-
-
+.thumbnail {
+  height: 100%;
+  background-color:#f78787;
+  border: 1px solid #000000; 
+}
 
                 /*--Media types below*/
 /* Extra small devices (portrait phones, less than 576px)
-      bootstrap col-xs changed to 736px test
       /* Portrait and Landscape */
 @media screen and (max-width: 576px){
+  h3{font-size:25px;}
   .jumbotron {
     background: #000000;
     padding-top:2em;
     padding-bottom:2em;
   }
-  .navbar-brand{
-    font-size: 20px;
-  }
-  .narrow-results{
-    display:none;
+  .navbar-brand{font-size: 20px;}
+  .narrow-results{display:none;}
+  .narrow-weekOne{display:none;}
+  .narrow-weekTwo{display:none;}
+  .narrow-weekThr{display:none;}
+  .narrow-weekFol{display:none;}
+  .narrow-sup{display:none;}
+  .narrow-Img{display:none;}
+  .carousel-inner > .item > img {height: 200px;}
+  .carousel-indicators {position:relative;
+    bottom:-10px;}
+  .carousel-caption{
+    text-align: left;}
+  .carousel-control{
+    height: 260px;
+    position: absolute;
+}
+.gallContainer{
+    margin:none;
+    padding:none;
   }
   #blockUnit{
     padding:1.5em;
     height:50%;
   }
-  .narrow-weekOne{
-    display:none;
-  }
-  .narrow-weekTwo{
-  display:none;
-  }
-  .narrow-weekThr{
-  display:none;
-  }
-  .narrow-weekFol{
-    display:none;
+  #buGallery{
+    padding:1.5em;
+    height: 25%;
   }
   #wkbtn{
       width: 93%;
@@ -138,10 +221,15 @@
   .narrow-results{
     display:none;
   }
+
   #blockUnit{
     padding:1.5em;
     height:50%;
   }
+  h3{
+    font-size:25px;
+  }
+  .narrow-Img{display:none;}
   .narrow-weekOne{
     display:none;
   }
@@ -152,6 +240,9 @@
   display:none;
   }
   .narrow-weekFol{
+    display:none;
+  }
+  .narrow-sup{
     display:none;
   }
   #wkbtn{
@@ -166,6 +257,12 @@
       bootstrap col-sm cahanged to 736px
 */
 @media screen and (max-width: 736px) and (orientation: landscape) {
+.carousel-inner > .item > img {height: 240px;}
+.carousel-indicators {bottom:12px;}
+.carousel-control{
+  margin-top: 15px;
+    height: 252px;
+}
 .jumbotron {
     padding-top:5px;
     padding-bottom:5px;
@@ -191,13 +288,14 @@
   .narrow-weekFol{
     display:none;
   }
+  .narrow-sup{
+    display:none;
+  }
+  .narrow-Img{display:none;}
 #blockUnit{
     padding:1.5em;
     height:auto;
   }
-#wkbtn{
-      width: 93%;
-      margin: auto;
 
 }
 /* Medium devices (tablets, less than 992px)*/
