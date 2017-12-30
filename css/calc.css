@@ -1,0 +1,67 @@
+body{
+            font-family: 'Roboto', sans-serif;
+         }
+
+         #container{
+            width: 550px;
+            margin: auto;
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         } 
+
+         label.field{
+            display: block;
+            text-align: right;
+            width: 130px;
+            float: left;
+            clear: both; /*added from solution*/
+         }
+         input{
+            width: 170px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            float: left; /*added from solution*/
+         }
+         output{
+            border-radius: 5px;
+            margin: 0 0 0 12px;
+            background-color: #4af;
+            padding: 6px 10px;
+            float: left; /*added from solution*/
+         }
+
+         .field{
+            padding: 6px 8px;
+         }
+
+         fieldset{
+            display: inline-block;
+            width: 700px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+         }
+         :focus{
+               background-color: #FFECE9;
+          }
+
+#Blcol{
+   background-color: green;
+   display: inline-block;
+   position: relative;
+}
+
+
+
+
+
+
+

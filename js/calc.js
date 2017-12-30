@@ -1,4 +1,4 @@
-       var finish1=0, finish2=0, finish3=0, finish4=0, finish5=0, finish6=0, actmul=.85, agemul=3, bbmul=1, wght=1, showmode=0, week=0, tooltipcreated=0, acttext="Wenig", agetext="im 1-2 Monat seines Lebens", sldr_act_desc=["Wenig", "Normalo", "Aktiv"], sldr_age_desc=["Welpe", "Junior", "Junghund", "Erwachsener", "Senior"];
+   var finish1=0, finish2=0, finish3=0, finish4=0, finish5=0, finish6=0, actmul=.85, agemul=3, bbmul=1, wght=1, showmode=0, week=0, tooltipcreated=0, acttext="Wenig", agetext="im 1-2 Monat seines Lebens", sldr_act_desc=["Wenig", "Normalo", "Aktiv"], sldr_age_desc=["Welpe", "Junior", "Junghund", "Erwachsener", "Senior"];
         function calculate() {
           $.ajax({
             url: "/barf-calculator/calc.php",

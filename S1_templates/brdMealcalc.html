@@ -1,9 +1,176 @@
 <div id="blockUnit">
-<div>{{Calc}}</div>
+	<div>{{Calc}}</div>
 <div>
+	<div id="container">
+    	<form>
+           	<fieldset>
+            	<legend>Calculator</legend>
+                	<div class="col-lg-12">
+                  		<div class="row">
+                  			<div class="col-lg-4">
+								<label for="fAge" class="field">Pets Age:</label>
+							</div>
+							<div class="col-lg-4"> 
+   								<input  id="fAge" name="fAge" required="*" placeholder="required field" type="range" min="1" value="18" Max="100" step="1" oninput="AgeoutputUpdate(value)"/>
+ 							</div> 
+ 							<div class="col-lg-1">                   
+                     			<output class="col-lg-1" for=fAge id=Age>18</output>
+                 			</div>
+             			</div>
+             		</div>	
+             		<div id="Blcol" class="col-lg-12">
+                  		<div class="row">
+                  			<div class="col-lg-4">
+								<label for="fWeight" class="field">Pets Weight:</label>
+							</div>
+							<div class="col-lg-4"> 
+   								<input  id="fWeight" name="fWeight" required="*" placeholder="required field" type="range" min="1" value="3" Max="100" step="1" oninput="WeightoutputUpdate(value)"/>
+ 							</div> 
+ 							<div class="col-lg-1">                   
+                     			<output class="col-lg-1" for=fWeight id=Weight>3</output>
+                 			kg</div>
+             			</div>
+             		</div>
+             		<div id="Blcol" class="col-lg-12">
+                  		<div class="row">
+                  			<div class="col-lg-4">
+								<label for="fWeight" class="field">Amount of body Weight:</label>
+							</div>
+							<div class="col-lg-4"> 
+   								<input  id="fWeight" name="fWeight" required="*" placeholder="required field" type="range" min="1" value="3" Max="100" step="1" oninput="WeightoutputUpdate(value)"/>
+ 							</div> 
+ 							<div class="col-lg-1">                   
+                     			<output class="col-lg-1" for=fWeight id=Weight>3</output>
+                 			kg</div>
+             			</div>
+             		</div>
+             		<div id="Blcol" class="col-lg-12">
+                  		<div class="row">
+                  			<div class="col-lg-4">
+								<label for="fWeight" class="field">Meat Content:</label>
+							</div>
+							<div class="col-lg-4"> 
+   								<input  id="fWeight" name="fWeight" required="*" placeholder="required field" type="range" min="1" value="3" Max="100" step="1" oninput="WeightoutputUpdate(value)"/>
+ 							</div> 
+ 							<div class="col-lg-1">                   
+                     			<output class="col-lg-1" for=fWeight id=Weight>3</output>
+                 			kg</div>
+             			</div>
+             		</div>
+             		<div id="Blcol" class="col-lg-12">
+                  		<div class="row">
+                  			<div class="col-lg-4">
+								<label for="fWeight" class="field">Grain feeding:</label>
+							</div>
+							<div class="col-lg-4"> 
+   								<input  id="fWeight" name="fWeight" required="*" placeholder="required field" type="range" min="1" value="3" Max="100" step="1" oninput="WeightoutputUpdate(value)"/>
+ 							</div> 
+ 							<div class="col-lg-1">                   
+                     			<output class="col-lg-1" for=fWeight id=Weight>3</output>
+                 			kg</div>
+             			</div>
+             		</div>
+             		<div id="Blcol" class="col-lg-12">
+                  		<div class="row">
+                  			<div class="col-lg-4">
+								<label for="fWeight" class="field">Bone feeding:</label>
+							</div>
+							<div class="col-lg-4"> 
+   								<input  id="fWeight" name="fWeight" required="*" placeholder="required field" type="range" min="1" value="3" Max="100" step="1" oninput="WeightoutputUpdate(value)"/>
+ 							</div> 
+ 							<div class="col-lg-1">                   
+                     			<output class="col-lg-1" for=fWeight id=Weight>3</output>
+                 			kg</div>
+             			</div>
+             		</div>
+
+                     <label for="password" class ="field">is your pet younger then 12 months?</label>
+                     <input id="password" name="password" required="*" placeholder="enter password" type="password"/>
+
+              
+
+                    
+
+                     <label for="submit" class="field">Submit</label>
+                     <input id="submit" type="submit" value="submit"/>
+               </fieldset>
+         </form>
 
 
-	
+
+
+
+         <!--one calculator--> 
+         <form>
+               <fieldset>
+                  <legend>Personal Details</legend>
+
+                     <label for="passport" class="field">Passport:</label>
+                     <input id="passport" name="passport" type="text" patten="[0-9]{7}[A-Za-z]{1}"
+                     title="Seven numbers followed by a single upper or lower case letter"/>
+
+      
+                     <label for="telNum" class="field">Telephone:</label>
+                     <input id="telNum" name="telNum" placeholder="digits only" type="number" pattern="[07]{2}[0-9]{11}" title="Mobile telephone numbers expected to begin with 07********" />
+   
+                     <label for="pCode" class="field">PostCode:</label>
+                     <input id="pCode" name="pCode" placeholder="UK Only" type="number/text" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-H" title="Uk only Postcodes with no spaces" />
+
+                     <label for="web" class="field">Website:</label>
+                     <input id="Website" name="website"  placeholder="enter full url" type="url"/> 
+
+                     <label for="fAge" class="field">Age:</label>
+                     <input id="fAge" name="fAge" required="*" placeholder="required field" type="range"
+                     min="1" value="18" Max="100" step="1" oninput="outputUpdate(value)"/>
+                     
+                     <output for=fAge id=Age>18 <script>
+                        function outputUpdate(age) {
+                           document.querySelector('#Age').value = age;
+                        }
+                     </script></output>
+                     
+               </fieldset>
+         </form>
+         <form>
+               <fieldset>
+                  <legend>Restaurant</legend>
+
+                     <label for="date" class="field">Booking Date:</label>
+                     <input id="date" name="date" type="date" date-date-inline-picker="true"/>
+
+
+                     <label for="menuChoice" class="field">Would You Like:</label>
+<label class="field2">
+   <label class="course"><input id="menu" type="checkbox" name="3 Course Meal"/>3 Course Meal</label>
+   <label class="course"><input id="menu" type="checkbox" name="2 course Meal"/>2 Course Meal</label>
+   <label class="course"><input id="menu" type="checkbox" name="Starter"/>Starter Only</label>
+   <label class="course"><input id="menu" type="checkbox" name="Main"/>Main Course Only</label>
+   <label class="course"><input id="menu" type="checkbox" name="Dessert"/>Dessert Only</label>
+</label>
+      
+                     <label for="telNum" class="field">Telephone:</label>
+                     <input id="telNum" name="telNum" placeholder="digits only" type="number" pattern="[07]{2}[0-9]{11}" title="Mobile telephone numbers expected to begin with 07********" />
+   
+                     <label for="pCode" class="field">PostCode:</label>
+                     <input id="pCode" name="pCode" placeholder="UK Only" type="number/text" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-H" title="Uk only Postcodes with no spaces" />
+
+                     <label for="web" class="field">Website:</label>
+                     <input id="Website" name="website"  placeholder="enter full url" type="url"/> 
+
+                     <label for="fAge" class="field">Age:</label>
+                     <input id="fAge" name="fAge" required="*" placeholder="required field" type="range"
+                     min="1" value="18" Max="100" step="1" oninput="outputUpdate(value)"/>
+                     
+                     <output for=fAge id=Age>18 <script>
+                        function outputUpdate(age) {
+                           document.querySelector('#Age').value = age;
+                        }
+                     </script></output>
+                     
+               </fieldset>
+         </form>
+    </div>
 </div>
 </div>
+  
 
