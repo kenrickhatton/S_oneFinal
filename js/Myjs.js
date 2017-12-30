@@ -4,3 +4,4 @@ function AgeoutputUpdate(age) {
 function WeightoutputUpdate(Weight) {
                            document.querySelector('#Weight').value = Weight;
                         }
+$("#slider").roundSlider();
