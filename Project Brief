@@ -1,0 +1,59 @@
+PROJECT GUIDELINES
+
+Points from the band Breif.
+
+Create A Website For A Band(Going to be For Raw Feeding Dogs Info)
+
+Build a static (front-end only) . As a starting point, you may want to use wireframes, as we did in the UX lesson (you can use Balsamiq or any other tool, including just pen and paper). You can use either your own assets or the assets in the following GitHub repo (https://github.com/Code-Institute-Org/project-assets).
+
+have a Wireframe using MockPlus
+
+Have my own assets but have some from other sauces too( Need to Creidet them in README.md file)
+
+
+Their primary target audience are Excisting ANd New Pet owners that would like to Raw Feed the pet.
+ have a supplyer database for there use and review as well as possable discounts
+ have a calculator to help with the best bone to meat ratio( java calculator needs Dovelapment)
+ Add a Social aspect that can creat organised Dog meets in your area of current members(with a choce if Not wishing to be part of it)
+
+other assets for Regestered Members
+
+Photos of there dogs
+A video clip 
+Audio clips 
+
+Calendar(for events)  Contact with Potentul Suppliers (and a rating system for the Users)
+The site should contain the ability to check on the suppliers availability for future orders and costs associated with various types of orders.
+create a contact form which will take all of the details, such as, name, email, date, supplier recomendation, Or event arrangments.
+All of this should be done using client-side JavaScript (no backend.)
+
+In addition, they are in the process of creating a social media presence and would like to add links to their Facebook, Twitter and YouTube pages.
+
+
+
+Create a website of around 4-5 pages, or (if using a single scrolling page) these should be separate page areas
+
+Incorporate main navigation and grid layout (you might want to use Flexbox or Bootstrap to accomplish this)
+
+Include at least one form with validation. Since you are not expected to build a backend for the project, all this form needs to do is inform the user of whether or not the data was submitted successfully (i.e. passed validation)
+Whenever possible, strive to use semantic HTML5 elements to better structure your HTML code.
+
+Make sure your site is as responsive as possible. You can test this by checking the site on different screen sizes and browsers.
+The site should contain your own custom JavaScript logic – include at least one interactive component on your site that is based on non-trivial javascript logic. You can write this logic either inside an Angular controller/service, or in a separate js file.
+
+You should conduct and document tests to ensure that all of you websites functionality works well. Automated testing using frameworks such as Jasmine are preferable, but properly documented manual tests are also acceptable.
+
+Write a README.md file for your project (in Markdown format) that explains what the project does and the need that it fulfils. It should also describe the functionality of the project, as well as the technologies used. Detail how the project was deployed and tested and if some of the work was based off other code, explain what was kept and/or how it was changed to fit your need. 
+
+********A project submitted without a README.md file will FAIL.
+
+
+In addition to the README.md file, you may include in your repository supplementary documentation and/or other relevant supporting material for the assessor in any format that is automatically handled by web browsers, such as html, pdf, jpg, etc. Files in proprietary formats such as Microsoft doc/docx will be ignored; but this is generally not a hindrance, since the vast majority of formats can be easily exported to PDF.
+
+Use Git & GitHub for version control. Each new piece of functionality should be in a separate commit.
+
+Deploy the final version of your code to a hosting platform such as GitHub Pages.
+
+
+
+

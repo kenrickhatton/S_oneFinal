@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>BeRawDogs</title>
+   <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <base href="/"> <!-- needed for Angular HTML5 mode -->
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/Mycss.css">
+<link rel="stylesheet" type="text/css" href="/css/calc.css">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script  src="bower_components/angular/angular.js"></script>
+    <script  src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+    <style>
+    /* There is a Mycss.css file ref above so not needed here any more*/
+    </style>
+</head>
+<body ng-app="MyApp">
+
+<nav class="navbar navbar-inverse">		
+		<div class="container">
+		    <div class="nav navbar-header">
+		    	<a class="navbar-brand" href="/"><strong>BeRawDogs.co.uk</strong></a>
+		    	<button type="button" class="navbar-toggle collapsed" 
+		    		data-toggle="collapse" 
+		    		data-target="#myCollapsingList">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		    </div>	    
+		    <ul id="myCollapsingList" class="nav navbar-nav 
+									         collapse navbar-collapse">
+				 <li><a href="/">Home</a></li>
+			     <li><a href="/FirstStep">Information</a></li>
+			     <li><a href="/Calc">Calculator</a></li>
+			     <li><a href="/Gallery">Gallery</a></li>
+			     <li><a href="/Suppliers">Suppliers</a></li>
+			     <li><a class="btn btn-link" href="/BeRaw/register" role="button">Register</a></li>
+			     <li><a class="btn btn-link" href="/BeRaw/login/" role="button">Login</a></li>
+			     
+			</ul>
+		</div>	
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-6 col-sm-4 btn-holder"></div>
+			  	<div class="col-lg-4 col-md-6 col-sm-8">
+					<h2>Welcome to BeRawDogs.co.uk!</h2>
+					<button id="intbtn" type="button" class="btn btn-info visible-xs" data-toggle="collapse" data-target="#narrow-results">Introduction</button>
+					<div id="narrow-results" class="narrow-results collapse">
+						<p> 
+						  	This is a site for those that wish to learn the benefits of raw feeding their dog!
+						</p>
+						<p>
+						  	I and my Wife have a lovely husky and have developed this website to share with others everything we have learnt and how we successfully transitioned our dog over to raw diet.
+						</p>
+						<p>
+						  	This is a StreamOne Project for me.
+						</p>
+					</div>
+				</div>        
+			</div>
+		</div>
+	</div>
+</nav>
+				
+<div id="baseFrame" ng-view>
+		
+				<!-- The templates will be merged into this div: -->
+</div>			
+	<script src="js/brdApp.js"></script>
+	<script src="js/brdControl.js"></script>
+	<script src="js/brdService.js"></script>
+	<script src="js/brdDirective.js"></script>
+	<script src="js/Myjs.js"></script>
+	<script src="js/calc.js"></script>
+</body>
+</html>
+
+
+
+
