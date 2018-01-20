@@ -11,12 +11,9 @@ angular.module('RouteControllers', [])
     .controller('GalleryController', function($scope) {
         $scope.gtopLine = "Photos of the Site.";
     })
-    .controller('CalcController', function($scope) {
-        $scope.CalcLine = "Meal Calc.";
-    })
+    
 
-.controller('RegisterController', function($scope, $location, UserAPIService, store) {
-
+    .controller('RegisterController', function($scope, $location, UserAPIService, store) {
         $scope.registrationUser = {};
         var url = "https://morning-castle-91468.herokuapp.com/";
 
@@ -52,7 +49,7 @@ angular.module('RouteControllers', [])
             }
         }
     })
-    .controller('LoginController', function($scope, $location, UserService, store) {
+    .controller('LoginController', function($scope, $location, UserAPIService, store) {
         var url = "https://morning-castle-91468.herokuapp.com/";
 
         $scope.submitForm = function() {
@@ -71,8 +68,89 @@ angular.module('RouteControllers', [])
                 });
             }
         };
+    })
+
+    .controller('ctrlController', function($scope, $location, UserAPIService, store){
+    var ImgAgeP = "Puppy.png";
+    var ImgAgeA = "teenDog.jpg";
+    /*.controller('ctrlController', function($scope) {*/
+    $scope.ImgAge = ImgAgeP;
+    $scope.calc = "Hello And welcome!.";
+        $("button").mouseenter(function(){
+            $(this).fadeTo(1000,0.5);        
+        });
+    //and a fadaTo effent on current button on mouseout
+    $("button").mouseout(function(){
+        $(this).fadeTo(1000,1);     
     });
-/*     .controller('LogoutController', function(store) {
+        //creates slide toggle on paragraph on button click
+        $("button").click(function(){
+            $("#slider1").roundSlider({
+                value:0
+                });
+        });
+
+    $("#slider1").roundSlider({
+    sliderType: "min-range",
+    mouseScrollAction: true,
+    radius: 100,
+    min: 0,
+    max:  13,
+    steps:1,
+    value: 4,
+    tooltipFormat:  function (a) {
+    var val = a.value, ImgAge;
+    if (val < 13) ImgAge = "Puppy";
+    else ImgAge = "Adult";
+
+    return val + " Months " + "<div>" + ImgAge + "<div>";
+},
+});
+    $("#slider2").roundSlider({
+    sliderType: "min-range",
+    mouseScrollAction: true,
+    radius: 100,
+    value: 10,
+    tooltipFormat:function changeTooltip(w) {
+    var val = w.value, weight;
+    if (val < 20) weight = "Slow";
+    else if (val < 40) weight = "Normal";
+    else if (val < 70) weight = "Speed";
+    else weight = "Very Speed";
+
+    return val + " ( kg )" + "<div>" + weight + "<div>";
+}
+
+
+
+
+
+});
+    $("#slider3").roundSlider({
+        sliderType: "min-range",
+    mouseScrollAction: true,
+    radius: 100,
+    value: 10
+    });
+        $("#slider4")
+          $scope.value = 75;
+          $scope.min = 10;
+          $scope.max = 90;
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+    .controller('LogoutController', function(store) {
         store.remove('username');
         store.remove('authToken');
     })
@@ -146,4 +224,4 @@ angular.module('RouteControllers', [])
                 })
             }
         }
-    });*/
+    });

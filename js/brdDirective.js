@@ -4,3 +4,4 @@ angular.module('RegDirective',[]).directive('profileTable',function(){
 		templateUrl: 'S1_templates/directives/profile-table.html'
 	};
 });
+

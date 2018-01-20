@@ -7,7 +7,7 @@ angular.module('UserService', [])
             }
         }
         return UserAPIService;
-    })
+    });
 
 angular.module('RegisterService', [])
     .factory('RegesterAPIService', function($http) {
@@ -31,3 +31,9 @@ angular.module('RegisterService', [])
         }
         return RegesterAPIService;
     });
+
+
+
+
+
+    

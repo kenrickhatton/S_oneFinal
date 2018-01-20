@@ -38,8 +38,8 @@ meal calculator and recomended supplieres for Qualitty produce and links.
 
 ## Tech Used
 ### Some the tech used includes:
-- [Jquery plugin for the radial sliders](http://roundsliderui.com/)
-    - Downloaded and for Local file loading.
+- [radial sliders](https://github.com/soundar24/roundSlider.git)
+    - bower installed and added to bower.json
   This is where i got the base code for them.
 - [AngularJS](https://angularjs.org/)
     - We use **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
@@ -56,7 +56,7 @@ Here we have a single header that simply says Some of the tech used includes. An
 text in the home page taken from a free to distribute pdf from www.rawfeedingrebels.com/wp-content/uploads/2014/11/dogs-starterguide.pdf
 But hope it could be a Blog Access page if used.
 
-Radial installation guide found here (http://roundsliderui.com/document.html#how-to-install)
+https://github.com/soundar24/roundSlider.git
 
 As this is a Solo Project Please Do not need any controbutions but if it would like to be forked for some one else the staps below are what i used to get it going.
  

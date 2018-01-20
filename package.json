@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/kenrickhatton/S_oneFinal/issues"
   },
-  "homepage": "https://github.com/kenrickhatton/S_oneFinal#readme"
+  "homepage": "https://github.com/kenrickhatton/S_oneFinal#readme",
+  "dependencies": {}
 }
