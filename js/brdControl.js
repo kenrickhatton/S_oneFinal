@@ -1,6 +1,13 @@
 angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
         $scope.title = "Welcome To Angular Todo!";
+    
+    $(function() {
+        $('img').on('click', function() {
+            $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+            $('#enlargeImageModal').modal('show');
+        })
+    })
     })
     .controller('FirstController', function($scope) {
         $scope.info = "This is only a guide that we used first.";
@@ -84,9 +91,19 @@ angular.module('RouteControllers', [])
         $(this).fadeTo(1000,1);     
     });
         //creates slide toggle on paragraph on button click
-        $("button").click(function(){
+        $(".bottom_button1").click(function(){
             $("#slider1").roundSlider({
-                value:0
+                value:1
+                });
+        });
+        $(".bottom_button2").click(function(){
+            $("#slider2").roundSlider({
+                value:15
+                });
+        });
+        $(".bottom_button3").click(function(){
+            $("#slider3").roundSlider({
+                value:9
                 });
         });
 
@@ -97,7 +114,7 @@ angular.module('RouteControllers', [])
     min: 0,
     max:  13,
     steps:1,
-    value: 4,
+    value: 1,
     tooltipFormat:  function (a) {
     var val = a.value, ImgAge;
     if (val < 13) ImgAge = "Puppy";
@@ -110,28 +127,35 @@ angular.module('RouteControllers', [])
     sliderType: "min-range",
     mouseScrollAction: true,
     radius: 100,
-    value: 10,
+    value: 15,
     tooltipFormat:function changeTooltip(w) {
     var val = w.value, weight;
-    if (val < 20) weight = "Slow";
-    else if (val < 40) weight = "Normal";
-    else if (val < 70) weight = "Speed";
+    if (val < 20.0) weight = "Slow";
+    else if (val < 40.0) weight = "Normal";
+    else if (val < 70.0) weight = "Speed";
     else weight = "Very Speed";
 
     return val + " ( kg )" + "<div>" + weight + "<div>";
 }
-
-
-
-
 
 });
     $("#slider3").roundSlider({
         sliderType: "min-range",
     mouseScrollAction: true,
     radius: 100,
-    value: 10
+    min: 0,
+    max:  50,
+    steps:1,
+    value: 9,
+    tooltipFormat:  function (a) {
+    var val = a.value, ImgAge;
+    if (val < 13) ImgAge = "Puppy";
+    else ImgAge = "Adult";
+
+    return val + " Months " + "<div>" + ImgAge + "<div>";
+}
     });
+
         $("#slider4")
           $scope.value = 75;
           $scope.min = 10;
